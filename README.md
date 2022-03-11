@@ -17,6 +17,21 @@ OUTPUT
 - ASTRID-RENE: 2
 - ASTRID-ANDRES: 3
 - RENE-ANDRES: 2
+### Solution
+My solution was to read the text file, then save the information in a map, since we can give a key and the content, in this case the key was the name of the employee and the content was his schedule.
+
+Once the information is saved, I created a function that allows me to compare strings in pairs, The first string is the complete schedule of the first employee, the second string is an array with the schedule of the second employee.
+
+### Example:
+String one =MO10:00-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00-21:00    
+String [] two = {"MO10:00-12:00", "TH12:00-14:00", "SU20:00-21:00"};
+
+Then I used the contains method in a for loop in this way  one.contains(two[i]) .... if this was true, my count would increase by one.
+
+For this example: The string one contains "MO10:00-12:00" and "SU20:00-21:00", it means that the count is 2.
+
+I made this for each employee excluding duplicated data to get the answer.
+
 
 ### Steps to run the program 🔧
 
